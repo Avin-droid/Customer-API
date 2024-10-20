@@ -1,0 +1,102 @@
+{
+  "customer": [
+    {
+      "id": "9b80",
+      "customer_FirstName": "Shrikant",
+      "customer_MiddleName": "Gorakh",
+      "customer_LastName": "Kalkhaire",
+      "customer_Building": "Riverdale",
+      "customer_Street": "Pashan",
+      "customer_city": "Pune",
+      "customer_state": "Maharashtra",
+      "customer_country": "India",
+      "customer_email": "shrikant@gmail.com",
+      "customer_ContactNumber_1": "9876543211",
+      "customer_ContactNumber_2": "8978654321"
+    },
+    {
+      "customer_FirstName": "Sharvari",
+      "customer_MiddleName": "Kondhe",
+      "customer_LastName": "Deshmukh",
+      "customer_Building": "ShreeWoods",
+      "customer_Street": "Dhanori",
+      "customer_city": "Pune",
+      "customer_state": "Maharashtra",
+      "customer_country": "India",
+      "customer_email": "sharvarrideshmukh27@gmail.com",
+      "customer_ContactNumber_1": "8765445678",
+      "customer_ContactNumber_2": "9876543210",
+      "id": "e779"
+    },
+    {
+      "id": "723c",
+      "customer_FirstName": "Sayali",
+      "customer_MiddleName": "Jalindar",
+      "customer_LastName": "Thorat",
+      "customer_Building": "LotusCourt",
+      "customer_Street": "Warje",
+      "customer_city": "Pune",
+      "customer_state": "Maharashtra",
+      "customer_country": "India",
+      "customer_email": "sayali@gmail.com",
+      "customer_ContactNumber_1": "7219274604",
+      "customer_ContactNumber_2": "9876543210"
+    },
+    {
+      "id": "1e88",
+      "customer_FirstName": "Avinash",
+      "customer_MiddleName": "Mahendra",
+      "customer_LastName": "Singh",
+      "customer_Building": "Nirmiti25East",
+      "customer_Street": "Pune",
+      "customer_city": "Pune",
+      "customer_state": "Maharashtra",
+      "customer_country": "India",
+      "customer_email": "avinashsingh000909@gmail.com",
+      "customer_ContactNumber_1": "7057437182",
+      "customer_ContactNumber_2": "9693823036"
+    },
+    {
+      "customer_FirstName": "Ashaar",
+      "customer_MiddleName": "Usman",
+      "customer_LastName": "Shaikh",
+      "customer_Building": "Riverdale",
+      "customer_Street": "Akrudi",
+      "customer_city": "Pune",
+      "customer_state": "Maharashtra",
+      "customer_country": "India",
+      "customer_email": "ashaar123@gmail.com",
+      "customer_ContactNumber_1": "9876543210",
+      "customer_ContactNumber_2": "8978765432",
+      "id": "549f"
+    },
+    {
+      "id": "991c",
+      "customer_FirstName": "Prachi",
+      "customer_MiddleName": "Pramod",
+      "customer_LastName": "Joshi",
+      "customer_Building": "Elysia",
+      "customer_Street": "Mukund Nagar",
+      "customer_city": "Pune",
+      "customer_state": "Maharashtra",
+      "customer_country": "India",
+      "customer_email": "prachi1912@gmail.com",
+      "customer_ContactNumber_1": "9567456213",
+      "customer_ContactNumber_2": "8965432156"
+    },
+    {
+      "id": "2197",
+      "customer_FirstName": "Mughda",
+      "customer_MiddleName": "Pramod",
+      "customer_LastName": "Joshi",
+      "customer_Building": "Elysia",
+      "customer_Street": "Mukund Nagar",
+      "customer_city": "Pune",
+      "customer_state": "Maharashtra",
+      "customer_country": "India",
+      "customer_email": "mughda@gmail.com",
+      "customer_ContactNumber_1": "9456789012",
+      "customer_ContactNumber_2": "8967564532"
+    }
+  ]
+}

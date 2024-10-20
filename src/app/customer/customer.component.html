@@ -1,0 +1,76 @@
+<form [formGroup]="frmReg" (ngSubmit)="archive()" novalidate="">
+
+First Name:<input type="text" name="fname" [(ngModel)]="regObj.customer_FirstName" formControlName="customer_FirstName">
+<h5 *ngIf="frmReg.controls.customer_FirstName.touched && frmReg.controls.customer_FirstName.invalid">First Name Should Contain Only Alphabets</h5><br>
+
+Middle Name:<input type="text" name="mname" [(ngModel)]="regObj.customer_MiddleName" formControlName="customer_MiddleName">
+<h5 *ngIf="frmReg.controls.customer_MiddleName.touched && frmReg.controls.customer_MiddleName.invalid">Middle Name Should Contain Only Alphabets</h5><br>
+
+Last Name:<input type="text" name="lname" [(ngModel)]="regObj.customer_LastName" formControlName="customer_LastName">
+<h5 *ngIf="frmReg.controls.customer_LastName.touched && frmReg.controls.customer_LastName.invalid">Last Name Should Contain Only Alphabets</h5><br>
+
+Building:<input type="text" name="bldg" [(ngModel)]="regObj.customer_Building" formControlName="customer_Building">
+<h5 *ngIf="frmReg.controls.customer_Building.touched && frmReg.controls.customer_Building.invalid">Building Name Should Match Pattern</h5><br>
+
+Street:<input type="text" name="strt" [(ngModel)]="regObj.customer_Street" formControlName="customer_Street">
+<h5 *ngIf="frmReg.controls.customer_Street.touched && frmReg.controls.customer_Street.invalid">Street Name Should Match Pattern</h5><br>
+
+City:<input type="text" name="ct" [(ngModel)]="regObj.customer_city" formControlName="customer_city">
+<h5 *ngIf="frmReg.controls.customer_city.touched && frmReg.controls.customer_city.invalid">City Name Should Contain Only Alphabets</h5><br>
+
+State:<input type="text" name="stat" [(ngModel)]="regObj.customer_state" formControlName="customer_state">
+<h5 *ngIf="frmReg.controls.customer_state.touched && frmReg.controls.customer_state.invalid">State Name Should Contain Only Alphabets</h5><br>
+
+Country:<input type="text" name="ctry" [(ngModel)]="regObj.customer_country" formControlName="customer_country">
+<h5 *ngIf="frmReg.controls.customer_country.touched && frmReg.controls.customer_country.invalid">Country Name Should Contain Only Alphabets</h5><br>
+
+Email-Id:<input type="text" name="email" [(ngModel)]="regObj.customer_email" (ngModelChange)="disable()" formControlName="customer_email" >
+<h5 *ngIf="frmReg.controls.customer_email.touched && frmReg.controls.customer_email.invalid">Email-Id Should match Pattern</h5><br>
+
+Contact-Number_1:<input type="text" name="cnone" [(ngModel)]="regObj.customer_ContactNumber_1" formControlName="customer_ContactNumber_1">
+<h5 *ngIf="frmReg.controls.customer_ContactNumber_1.touched && frmReg.controls.customer_ContactNumber_1.invalid">Contact Number Should Contain Only Numeric Value</h5><br>
+
+Contact-Number_2:<input type="text" name="cntwo" [(ngModel)]="regObj.customer_ContactNumber_2" formControlName="customer_ContactNumber_2">
+<h5 *ngIf="frmReg.controls.customer_ContactNumber_2.touched && frmReg.controls.customer_ContactNumber_2.invalid">Contact Number should Contain Only Numerical Value</h5><br><br>
+
+<input type="submit" value="POST" [disabled]="frmReg.invalid"><br><br>
+
+</form>
+<br>
+<br>
+{{editflag}}
+<table>
+    <tr>
+        <th>Customer-Id</th>
+        <th>Customer-First_Name</th>
+        <th>Customer-Middle_Name</th>
+        <th>Customer-Last_Name</th>
+        <th>Customer-Building</th>
+        <th>Customer-Street</th>
+        <th>Customer-City</th>
+        <th>Customer-State</th>
+        <th>Customer-Country</th>
+        <th>Customer-Email</th>
+        <th>Customer-ContactNumber_1</th>
+        <th>Customer-ContactNumber_2</th>
+        <th>Delete Record</th>
+        <th>Update Record</th>
+    </tr>
+
+    <tr *ngFor="let cust of custArr;">
+        <td>{{cust.id}}</td>
+        <td>{{cust.customer_FirstName}}</td>
+        <td>{{cust.customer_MiddleName}}</td>
+        <td>{{cust.customer_LastName}}</td>
+        <td>{{cust.customer_Building}}</td>
+        <td>{{cust.customer_Street}}</td>
+        <td>{{cust.customer_city}}</td>
+        <td>{{cust.customer_state}}</td>
+        <td>{{cust.customer_country}}</td>
+        <td>{{cust.customer_email}}</td>
+        <td>{{cust.customer_ContactNumber_1}}</td>  
+        <td>{{cust.customer_ContactNumber_2}}</td>
+        <td><button (click)="deleteRecord(cust.id)">Delete</button></td>
+        <td><button class="btn1" (click)="updateRecord(cust.id)">Update</button></td>
+    </tr>
+</table>
